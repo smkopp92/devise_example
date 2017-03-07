@@ -38,7 +38,7 @@ feature 'user signs in', %Q{
     fill_in 'Password', with: 'cutefuzzypuppykitten'
     click_button 'Sign In'
 
-    expect(page).to have_content('Invalid email or password')
+    expect(page).to have_content('Invalid Email or password')
     expect(page).to_not have_content('Welcome Back!')
     expect(page).to_not have_content('Sign Out')
   end
@@ -51,7 +51,7 @@ feature 'user signs in', %Q{
     fill_in 'Password', with: "WRONG"
     click_button 'Sign In'
 
-    expect(page).to have_content('Invalid email or password')
+    expect(page).to have_content('Invalid Email or password')
     expect(page).to_not have_content('Welcome Back!')
     expect(page).to_not have_content('Sign Out')
   end
