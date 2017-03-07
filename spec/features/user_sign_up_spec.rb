@@ -1,11 +1,6 @@
 require 'rails_helper'
 
 feature 'sign up' do
-  # Acceptance Criteria:
-  # * I must specify a valid email address, first name, and last name
-  # * I must specify a password, and confirm that password
-  # * If I do not perform the above, I get an error message
-  # * If I specify valid information, I register my account and am authenticated
   scenario 'with valid information' do
     visit root_path
     click_link 'Sign Up'
