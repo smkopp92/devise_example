@@ -1,0 +1,16 @@
+<h1>PUPPIES</h1>
+<% @puppies.each do |puppy| %>
+  <ul>
+    <li id="score_<%=puppy.id%>">
+      Score: <%= puppy.score %>
+    </li>
+    <li>
+      <%= puppy.name %>
+    </li>
+    <li>
+      <img src="<%= puppy.img_url %>" height="100" width="100">
+    </li>
+    <button id="<%=puppy.id%>" class="upvote">Upvote</button>
+    <button id="<%=puppy.id%>" class="downvote">Downvote</button>
+  </ul>
+<% end %>

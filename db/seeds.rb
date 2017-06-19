@@ -5,3 +5,4 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Puppy.create(name: "Newfoundland", img_url: "https://s-media-cache-ak0.pinimg.com/736x/5a/3f/ec/5a3fec92b7fb2da03780e9ece954d4b9.jpg")
