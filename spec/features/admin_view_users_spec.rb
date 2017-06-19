@@ -56,6 +56,6 @@ feature 'admin user index' do
 
     visit admin_users_path
 
-    expect(page).to_not have_content user.first_name
+    expect(page).to have_content("You're not an admin, pal")
   end
 end
