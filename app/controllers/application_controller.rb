@@ -12,4 +12,10 @@ class ApplicationController < ActionController::Base
       redirect_to root_path, notice: "You're not an admin, pal"
     end
   end
+
+  def authenticate_user!
+    unless user_signed_in?
+      redirect_to root_path, notice: "You gotta sign in, ol' sport"
+    end
+  end
 end
