@@ -8,6 +8,8 @@ gem 'uglifier', '>= 1.3.0'
 gem 'jquery-rails'
 gem 'devise'
 gem 'database_cleaner'
+gem 'sendgrid-ruby'
+gem 'dotenv-rails'
 
 group :development do
   gem 'listen', '~> 3.0.5'
