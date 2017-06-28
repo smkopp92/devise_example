@@ -16,4 +16,9 @@ Rails.application.routes.draw do
       end
     end
   end
+
+  resources :users, only: [] do
+    resources :followers, only: [:index]
+    resources :followees, only: [:index]
+  end
 end
